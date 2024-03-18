@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1. Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o maior deles.
+        var num1 =  parseInt(prompt("digite um número: "))
+        var num2 =  parseInt(prompt("digite um número:"))
+        
+        alert("seu primeiro numero foi:" + num1)
+        alert("seu segundo numero foi:" + num2)
+
+        if (num1 > num2){
+            alert("o numero maior é " + num1)
+        }
+
+        else {
+            alert("o número maior é " + num2)
+        
+
+        2. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
+            var num = parseFloat(prompt("digite um numero positivo ou negativo: "))
+
+            alert("seu numero informado foi: " + num)
+
+            if(num > 0){
+                alert("o numero " + num + " é positivo")
+            }
+            else{
+                alert("o numero" + num + " é negativo")
+            }
+
+
+            3. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+            var num1 =  parseInt(prompt("digite um número: "))
+            var num2 =  parseInt(prompt("digite um número:"))
+            var num3 =  parseInt(prompt("digite um número:"))
+        
+            alert("seu primeiro numero foi:" + num1)
+            alert("seu segundo numero foi:" + num2)
+            alert("seu terceiro numero foi:" + num3)
+
+            if (num1 > num2 && num1 > num3){
+            alert("o numero maior é " + num1)
+            } else if(num2 > num1 && num2 > num3){
+                alert("o numero maior é " + num2)
+            }
+
+            else if(num3 > num1 && num3 > num2){
+            alert("o número maior é " + num3)
+            }
+
+            4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+            num1 = parseFloat(prompt("digite o valor do primeiro numero: "))
+            num2 = parseFloat(prompt("digite o valor do segundo numero: "))
+            num3 = parseFloat(prompt("digite o valor do terceiro numero: "))
+            soma = 0
+            
+            alert("seu primeiro numero foi:" + num1)
+            alert("seu segundo numero foi:" + num2)
+            alert("seu terceiro numero foi:" + num3)
+
+            possiveis somas num1
+            if ( num1 > num2 && num2 >num3){
+                soma = num1 + num2
+                alert("soma dos numeros maiores " + num1 + " e " + num2 + " são: " + soma)
+            }
+            else if(num1 >num3 && num3 > num2){
+                soma= num1 + num3
+                alert("soma dos numeros maiores " + num1 + " e " + num3 + " são: " + soma)
+            }
+
+
+
+            possiveis somas num2
+            else if(num2 > num3 && num3 >num1){
+                soma = num2 + num3
+                alert("soma dos numeros maiores " + num2 + " e " + num3 + " são: " + soma)
+            }
+            else if (num2 > num1 && num1 > num3){
+                soma = num2 + num1
+                alert("soma dos numeros maiores " + num2 + " e " + num1 + " são: " + soma)
+            }
+
+
+
+            possiveis somas num3
+            else if(num3 > num1 && num1 >num2){
+                soma = num3 + num1
+                alert("soma dos numeros maiores " + num3 + " e " + num1 + " são: " + soma)
+            }
+            else if(num3 > num2 && num2 > num1){
+                soma = num3 + num2
+                alert("soma dos numeros maiores " + num3 + " e " + num2 + " são: " + soma)
+            }
+
+            5.  Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+           
+            num1 = parseFloat(prompt("digite um número: "))
+            num2 = parseFloat(prompt("digite um número: "))
+            num3 = parseFloat(prompt("digite um número: "))
+            num4 = parseFloat(prompt("digite um número: "))
+            num5 = parseFloat(prompt("digite um número: "))
+            num6 = parseFloat(prompt("digite um número: "))
+
+            media = (num1 + num2 + num3 + num4 + num5 + num6) / 6
+
+            alert("o valor da média é " + media)
+
+            6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+            
+            num1 = parseFloat(prompt("digite um número: "))
+            num2 = parseFloat(prompt("digite um número: "))
+            num3 = parseFloat(prompt("digite um número: "))
+            num4 = parseFloat(prompt("digite um número: "))
+
+            alert("o primeiro número informado foi " + num1)
+            alert("o último número informado foi " + num4)
+            
+            if ( num1 > num2 && num1 > num3){
+                alert("e o maior numero informado foi: " + num1)
+            }
+            else if(num2 > num3 && num2 > num4){
+                alert("o maior número informado foi " + num2)
+            }
+            else if(num3 > num4 && num3 >num1){
+                alert("o maior número informado foi " + num3)
+            }
+            else if (num4 > num1 && num4 > num2){
+                alert("o maior número informado foi " + num4)
+            }
+
+            7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+            var numeros = []
+            var soma = 0
+
+
+            for ( var i = 0; i < 6; i++) {
+                var num = parseFloat(prompt("digite um números: "))
+                numeros.push(num)
+
+                if(num<72){
+                    soma+=num
+                }
+            }
+
+            alert("a soma dos numeros inferiores a 72 são: " + soma)
+            alert("os numeros informados foram: " + numeros)
+            
+            
+            8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+
+            var numeros = []
+            var soma = 0
+            var media = 0
+
+            for( var i = 0; i < 4; i++) {
+                var num = parseFloat(prompt("digite um número: "))
+                numeros.push(num)
+
+                if(num >0 && num <10){
+                    soma += num
+                    alert(soma)
+                }
+                else{
+                    alert("coloque numeros entre 0 e 10")
+                
+                }
+                media = soma/4
+            }
+            
+            
+            alert("a media é: " + media)
+
+
+            if(media > 5){
+                alert("voce passou no teste")
+            }
+            else{
+                alert("tente novamente")
+            }
+
+            9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+
+            var ano_nasc = prompt("digite seu ano de nascimento: ")
+            var ano_atual = 2024
+            var idade = ano_atual - ano_nasc
+
+            alert("voce possui " + idade + " anos")
+
+            if (idade >=18){
+                alert("voce pode votar este ano")
+            }
+            else {
+                alert("voce nao possui idade para votar")
+            }
+
+            10. Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+
+            var altura = parseFloat(prompt("digite sua altura: \n(use pontos. NÃO USE VÍRGULAS)"))
+            var genero= parseInt(prompt("informe seu genero\n (1 para feminino | 2 para masculino)"))
+            var ideal_fem = ( 62.1 * altura) - 44.7
+            var ideal_masc = (72.7 * altura) - 58
+            
+            if ( genero == 1){
+               alert ("seu peso ideal é " + ideal_fem)
+            }
+
+            else if(genero ==2){
+                alert("seu peso ideal é " + ideal_masc)
+            }
+
+            11. Uma micro calculadora
+            Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+            O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. 
+
+            var operacao = parseInt(prompt("digite a operação desejada:" + "\n" + "1. adição" + "\n" + "2. subtração" + "\n" + "3. divisão" + "\n" + "4. multiplicação"))
+            
+            if ( operacao < 1 || operacao > 4 || isNaN(operacao)){
+                alert("operação inexistente")
+            }
+            else{
+                var num1 = parseInt(prompt("digite um numero: "))
+                var num2 = parseInt(prompt("digite um numero: "))
+
+                var resultado;
+
+                switch (operacao){
+                    case 1:
+                        resultado = num1 + num2;
+                        break;
+
+                    case 2:
+                        resultado = num1 - num2;
+                        break;
+
+                    case 3:
+                        if(num2 === 0 ){
+                            alert("não é possivel dividir por 0")
+                        break;
+                    }
+
+                        else {
+                        resultado = num1 / num2;
+                        break;
+                        }
+
+                    case 4:
+                        resultado = num1 * num2;
+                        break;    
+                }
+            }
+            alert("o resultado de sua operação é: " + resultado)*/
+
+            
+             
+            
+
+
+    </script>
+</body>
+</html>
